@@ -4,15 +4,38 @@
   (ngSubmit)="handleFormData(form)">
   <div class="form-group">
     <label for="name">Movie Name</label>
-    <input type="text" class="form-control" id="name">
+    <input type="text" 
+      ngModel 
+      required
+      #mname="ngModel"
+      name="name"
+      class="form-control" 
+      aria-describedby="name"  
+      class="form-control" 
+      id="name">
   </div>
   <div class="form-group">
     <label for="rating">Rating:</label>
-    <input type="text" class="form-control" id="rating">
+    <input ngModel 
+      required
+      #mrating="ngModel"
+      name="rating"
+      class="form-control" 
+      aria-describedby="rating"  
+      class="form-control" 
+      id="name">
   </div>
   <div class="form-group">
     <label for="url">Image URL:</label>
-    <input type="text" class="form-control" id="url">
+    <input
+      ngModel 
+      required
+      #murl="ngModel"
+      name="url"
+      class="form-control" 
+      aria-describedby="name"  
+      class="form-control" 
+      id="url">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
