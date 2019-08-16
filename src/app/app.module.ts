@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AddMovieComponent } from './add-movie/add-movie.component';
 import { ListAllMoviesComponent } from './list-all-movies/list-all-movies.component';
-
+import {FormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +16,7 @@ import { ListAllMoviesComponent } from './list-all-movies/list-all-movies.compon
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

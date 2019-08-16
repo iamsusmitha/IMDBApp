@@ -1,3 +1,26 @@
-<p>
-  header works!
-</p>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" >Movies App</a>
+    </li>
+  </ul>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" 
+          [routerLink]="['']" 
+          >Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" 
+              [routerLink]="['/add']" 
+              routerLinkActive="router-link-active" >Add Movie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" 
+            [routerLink]="['/list']" 
+            routerLinkActive="router-link-active" >List All Movies</a>
+      </li>
+    </ul>
+  </div>
+</nav>
